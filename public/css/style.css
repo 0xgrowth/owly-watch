@@ -67,6 +67,8 @@ a,
     border-color: #b8860b;
 }
 
+/* From line 70 to line 141 and then changes where made to the info class on line 157 -/added by Oxgrowth*/
+
 @media screen and (max-device-width: 480px) and (orientation: portrait){
     .navigation {
     width: 100%;
@@ -85,13 +87,19 @@ a,
     height: 100%;
     }
 
-    .join-message {
-    font-size: 10px;
-    width: -moz-fit-content;
-    width: fit-content;
-    color: white;
-    text-transform: uppercase;
+    .join-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin-left: auto;
+        width: -moz-fit-content;
+        width: fit-content;
+        font-size: 10px;
+        color: white;
+        text-transform: uppercase;
     }
+    
 
     .button {
     border: 1px solid #ffdf00;
@@ -109,15 +117,25 @@ a,
     background: #b8860b;
     border-color: #b8860b;
     }
+
+    .main {
+        position: relative;
+        margin-top: 60px;
+        width: 100%;
+        padding: 10px 2.5vw;
+        color: white;
+    }
+
     .heading {
     text-transform: uppercase;
-    font-weight: 900;
-    font-size: 50px;
+    font-weight: 700;
+    font-size: 25px;
       }
 
     .info {
-    width: 50%;
-    font-size: 20px;
+    padding: 10px 10px;
+    width: 75%;
+    font-size: 10px;
     margin-top: 10px;
     }
 }
@@ -136,12 +154,14 @@ a,
     font-size: 50px;
 }
 
+@media screen and (min-device-width: 480px) {
+
 .info {
     width: 50%;
     font-size: 20px;
     margin-top: 10px;
+  }
 }
-
 .movie-list {
     width: 100%;
     height: 250px;

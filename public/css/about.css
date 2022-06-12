@@ -1,3 +1,70 @@
+/* From line 1 to line 141 and then changes where made to the info class on line 157 -/added by Oxgrowth*/
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .movie-info {
+        width: 100%;
+        height: calc(100vh - 60px);
+        margin-top: 60px;
+        background: linear-gradient(90deg, rgba(36, 36, 0, 1), rgba(26, 26, 26, 0) 100%);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .movie-detail {
+        width: 75%;
+        height: 100%;
+        background: #1a1a1a38;
+       
+        margin: auto;
+        padding: 6.5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        color: #faf0be;
+    }
+    
+    .movie-name {
+        bottom: 10%;
+        font-size: 30px;
+        font-weight: 500px;
+        text-transform: capitalize;
+    }
+    
+    .genre {
+        bottom: 10%;
+        margin: 30px 0;
+        opacity: 0.5;
+    }
+
+    .recommendations {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        max-width: 85%;
+    }
+
+    .movie {
+        left: 15%;
+        padding: 10px 10px;
+        margin-bottom: 20px;
+        height: 125px;
+        width: 125px;
+        transition: all 0.3s ease;
+    }
+    
+    .movie img {
+        height: 125px;
+        width: 125px;
+        border-radius: 8px;
+    }
+    
+    .movie:hover {
+        transform: scale(1.02);
+     }
+}
+
+@media screen and (min-device-width: 480px) {
+
 .movie-info {
     width: 100%;
     height: calc(100vh - 60px);
@@ -61,7 +128,8 @@ iframe {
 .recommendations {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 3px;
+    gap: 10px;
+    max-width: 85%;
 }
 
 .movie p {
@@ -83,6 +151,9 @@ iframe {
 }
 
 .movie {
+    left: 15%;
+    padding: 10px 10px;
+    margin-bottom: 20px;
     height: 220px;
     width: 100%;
     transition: all 0.3s ease;
@@ -94,4 +165,5 @@ iframe {
 
 .movie:hover {
     transform: scale(1.02);
+ }
 }
