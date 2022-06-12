@@ -67,6 +67,61 @@ a,
     border-color: #b8860b;
 }
 
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+    .navigation {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    background: black;
+    z-index: 9;
+    padding: 0 2.5vw;
+    display: flex;
+    align-items: center;
+    }
+
+    a,
+    .logo {
+    height: 100%;
+    }
+
+    .join-message {
+    font-size: 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+    color: white;
+    text-transform: uppercase;
+    }
+
+    .button {
+    border: 1px solid #ffdf00;
+    border-radius: 2px;
+    background: none;
+    color: white;
+    padding: 0 10px;
+    height: 35px;
+    margin-left: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    }
+
+    .join {
+    background: #b8860b;
+    border-color: #b8860b;
+    }
+    .heading {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 50px;
+      }
+
+    .info {
+    width: 50%;
+    font-size: 20px;
+    margin-top: 10px;
+    }
+}
+
 .main {
     position: relative;
     margin-top: 60px;
