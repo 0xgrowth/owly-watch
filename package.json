@@ -1,0 +1,15 @@
+{
+  "name": "owly-watch",
+  "version": "1.0.0",
+  "description": "netflix clone with node.js",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express.js": "^1.0.0",
+    "nodemon": "^2.0.16"
+  }
+}
